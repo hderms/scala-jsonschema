@@ -176,7 +176,8 @@ As result you will receive this:
 ```
 
 ### Regular
-Schema generated in Regular mode will contain so many `definitions` so many separated definitions you provide.
+Schema generated in Regular mode will 
+tain so many `definitions` so many separated definitions you provide.
 Lets take a look at example code: 
 
 ```scala
@@ -470,7 +471,7 @@ Currently supported:
 
 Example usage: _Play_
 ```scala
-import con.github.andyglow.jsonschema.AsPlay._
+import com.github.andyglow.jsonschema.AsPlay._
 import play.api.libs.json._
 
 case class Foo(name: String)
@@ -480,7 +481,7 @@ val fooSchema: JsValue = Json.schema[Foo].asPlay()
 
 Example usage: _Spray_
 ```scala
-import con.github.andyglow.jsonschema.AsSpray._
+import com.github.andyglow.jsonschema.AsSpray._
 import spray.json._
 
 case class Foo(name: String)
@@ -490,7 +491,7 @@ val fooSchema: JsValue = Json.schema[Foo].asSpray()
 
 Example usage: _Circe_
 ```scala
-import con.github.andyglow.jsonschema.AsCirce._
+import com.github.andyglow.jsonschema.AsCirce._
 import io.circe._
 
 case class Foo(name: String)
@@ -500,7 +501,7 @@ val fooSchema: Json = Json.schema[Foo].asCirce()
 
 Example usage: _Json4s_
 ```scala
-import con.github.andyglow.jsonschema.AsJson4s._
+import com.github.andyglow.jsonschema.AsJson4s._
 import org.json4s.JsonAST._
 
 case class Foo(name: String)
